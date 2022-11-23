@@ -1,0 +1,96 @@
+:root{
+    --Primary-background: rgba(36,36,36,255);
+    --Primary-border: 1px solid rgba(67,67,67,255);
+    --card-content-Background: rgba(49,49,49,255);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding: 2rem;
+
+}
+.card{
+    width: 30%;
+    height: 600px;
+    border: 2px solid black;
+    margin: auto;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: var(--Primary-background);
+}
+.card-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    padding: 5px;
+}
+ .card-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    border: var(--Primary-border);
+    border-radius: 5px;
+    background-color: var(--card-content-Background);
+}
+.card-content > ion-icon{
+    font-size: 25px;
+    color: white;
+}
+.card-container > .first-content{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    transition: 0.5s;
+}
+.first-content:hover{
+    background-color: rgba(97,204,255,255);
+    cursor: pointer;
+}
+.text-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 5px;
+}
+.text-container > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 13px;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    padding: 5px;
+}
+.second-content{
+    margin-top: 20px;
+}
+.third-section{
+    margin-top: 25px;
+    padding: 5px;
+}
+.third-section .range{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.range ion-icon{
+    font-size: 25px;
+    color: white;
+}
+.range input{
+    width: 80%;
+}
+.volume{
+    margin-top: 30px;
+}
