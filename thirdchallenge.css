@@ -1,0 +1,120 @@
+:root{
+    --Primary-Background:#E8E8FD;
+    --Secondary-Background: #EA4C3C;
+    --Text-color: #292858;
+    --Border-color: #9292AE;
+    --Text-secondary: #B2B2CB;
+    --Left-Section-color: #F8F8FF;
+    --Middle-Section-color: #FEFEFF;
+    --Right-Section-color: #FCFCFF;
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Ubuntu;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--Primary-Background);
+    padding: 2rem;
+}
+.content{
+    width: 80%;
+    height: 600px;
+    /* border: 2px solid black; */
+    margin: auto;
+    padding: 5px;
+    position: relative;
+}
+.back{
+    background-color: var(--Secondary-Background);
+    width: 15%;
+    height: 100%;
+    border-radius: 40px;
+}
+.front-page{
+    background: white;
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+}
+.front-page > .left{
+    flex: 1;
+    width: 15%;
+    height: 100%;
+    padding-top: 50px;
+    padding-left: 30px;
+    background-color: var(--Left-Section-color);
+}
+.left .info-holder{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+.left .info-holder img{
+    border-radius: 30%;
+    width: 40px;
+    height: 40px;
+}
+.left .info-holder h5{
+    color: var(--Text-color);
+}
+.left .info-holder p{
+    font-size: 11px;
+    color: var(--Text-secondary);
+}
+.list-content{
+    margin-bottom: 70px;
+}
+.list-content .icon{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    color: var(--Text-color);
+}
+ ion-icon{
+    font-size: 25px;
+    color: var(--Text-color);
+}
+.list-content .icon p{
+    font-size: 14px;
+    color: #2928589f;
+}
+.left .logout{
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logout p{
+    font-size: 14px;
+    color: #2928589f;
+}
+.front-page > .middle{
+    flex: 2;
+    width: 70%;
+    height: 100%;
+    padding-top: 50px;
+    padding-left: 30px;
+    background-color: var(--Middle-Section-color);
+}
+.front-page > .right{
+    flex: 1;
+    width: 15%;
+    height: 100%;
+    padding-top: 50px;
+    padding-left: 30px;
+    background-color: var(--Right-Section-color);
+}
